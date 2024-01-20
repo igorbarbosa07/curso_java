@@ -1,12 +1,24 @@
 package br.com.alura.igorflix.modelos;
 
 public class Filme {
-    String nome;
-    int anoDeLancamento;
-    boolean incluidoNoPlano;
+    private String nome;
+    private int anoDeLancamento;
+    private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacao;
-    int durancacaoEmMinutos;
+    private int durancacaoEmMinutos;
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public void setDurancacaoEmMinutos(int durancacaoEmMinutos) {
+        this.durancacaoEmMinutos = durancacaoEmMinutos;
+    }
 
     public int getTotalDeAvaliacao() {
         return totalDeAvaliacao;
